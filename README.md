@@ -35,7 +35,7 @@ Here is a breakdown of the programs included in this repository:
 ## 🚀 How to Run the Programs
 
 To run these assembly files on your computer:
-1. Download and install the [MARS Simulator](https://courses.missouristate.edu/kenvollmar/mars/).
+1. Download and install the [MARS Simulator]([https://courses.missouristate.edu/kenvollmar/mars/](https://www.csfieldguide.org.nz/en/interactives/mips-simulator/)).
 2. Open MARS and load any `.asm` or `.s` file from this repository.
 3. Click on **Assemble** (the wrench and screwdriver icon).
 4. Click on **Run** (the green play button) to execute the code and interact with the console.
