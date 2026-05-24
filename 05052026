@@ -1,0 +1,47 @@
+.data
+prompt: .asciiz "Inserisci il numero N: "
+result: .asciiz "Somma finale: "
+
+.text
+.globl main
+main:
+    # 1. Chiedere l'input all'utente
+    li $v0, 4           
+    la $a0, prompt
+    syscall
+
+    # 2. Leggere l'intero N
+    li $v0, 5           
+    syscall
+    move $t0, $v0  # $t0 contiene N
+
+    # 3. Inizializzo la somma
+    li $t1, 0      # $t1 conterrà il totale della somma
+    
+loop:
+    # Se N ($t0) è uguale a 0, abbiamo finito
+    beq $t0, $0, stampa_risultato
+    
+    # Aggiungi il valore corrente di N alla somma
+    add $t1, $t1, $t0
+    
+    # Decremento N per passare al numero precedente (es: da 5 a 4)
+    addi $t0, $t0, -1
+    
+    # Torna all'inizio del ciclo
+    j loop
+    
+stampa_risultato:
+    # Stampa la stringa "Somma finale: "
+    li $v0, 4
+    la $a0, result
+    syscall
+    
+    # Stampa il valore intero contenuto in $t1
+    move $a0, $t1  
+    li $v0, 1
+    syscall
+    
+    # ESCI
+    li $v0, 10          
+    syscall
