@@ -64,7 +64,7 @@ All MIPS Assembly source files are consolidated inside the `mips-assembly-exerci
 ## 🚀 How to Run the Programs
 
 To run these assembly files on your computer:
-1. Download and install the [MARS Simulator](https://courses.missouristate.edu/kenvollmar/mars/).
+1. Download and install the [MARS Simulator] (https://computerscience.missouristate.edu/mars-mips-simulator.htm).
 2. Open MARS and navigate to the `mips-assembly-exercises/` directory to load any `.asm` or `.s` file.
 3. Click on **Assemble** (the wrench and screwdriver icon).
 4. Click on **Run** (the green play button) to execute the code and interact with the simulated console.
